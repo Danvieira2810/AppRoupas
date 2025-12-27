@@ -1,0 +1,55 @@
+<div class="contato-container">
+  <h1>Conta</h1>
+
+  <form #formConta="ngForm" (ngSubmit)="enviar(formConta)" class="form-contato">
+
+      <div class="grupo-input">
+          <label for="nome">Nome:</label>
+          <input
+            [(ngModel)]="conta.nome"
+            name="nome"
+            id="nome"
+            type="text"
+            placeholder="Ex.: Maria Perez"
+            required>
+      </div>
+
+      <div class="grupo-input">
+          <label for="email">E-mail:</label>
+          <input
+            [(ngModel)]="conta.email"
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Ex.: maria@gmail.com"
+            required>
+      </div>
+
+      <div class="grupo-input">
+          <label for="senha">Senha:</label>
+          <input
+            [(ngModel)]="conta.senha"
+            name="senha"
+            id="senha"
+            type="password"
+            placeholder="Digite sua senha"
+            required>
+      </div>
+
+      <button
+        type="submit"
+        class="btn-enviar">
+        Criar Conta
+      </button>
+  </form>
+
+
+  <p *ngIf="erro" style="color: red; margin-top: 10px;">
+    Preencha todos os campos.
+  </p>
+
+  <p *ngIf="enviado" style="color: green; margin-top: 10px;">
+    Sua conta foi criada!
+  </p>
+
+</div>

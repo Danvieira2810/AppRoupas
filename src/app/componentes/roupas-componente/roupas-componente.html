@@ -1,0 +1,19 @@
+<h2 class="titulo-pagina">Produtos</h2>
+
+<div class="produtos-container">
+
+  @for (item of roupas; track item) {
+    <div class="produto-card">
+      <img class="produto-img" [src]="item.imagem" alt="{{ item.nome }}" />
+
+      <p class="produto-nome">{{ item.nome }}</p>
+      <p class="produto-preco">R$ {{ item.preco }},00</p>
+
+      <button class="btn-editar" (click)="adicionarAoCarrinho(item)">
+      Adicionar ao Carrinho
+    </button>
+
+    </div>
+  }
+
+</div>

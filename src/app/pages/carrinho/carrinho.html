@@ -1,0 +1,25 @@
+<div class="container-carrinho">
+  <h2>Seu Carrinho</h2>
+
+  <div *ngIf="carregando">Carregando itens...</div>
+
+  <div *ngIf="!carregando && itensCarrinho.length > 0">
+    <ul *ngFor="let item of itensCarrinho">
+      <li>
+        {{ item.produto.nome }} ({{ item.quantidade }}x)
+        - R$ {{ item.subtotal | number: '1.2-2' }}
+      </li>
+    </ul>
+
+    <hr>
+    <h3>Total da Compra: R$ {{ totalCarrinho | number: '1.2-2' }}</h3>
+
+    <button class="btn-finalizar" (click)="finalizarCompra()">
+      Finalizar Compra
+    </button>
+  </div>
+
+  <div *ngIf="!carregando && itensCarrinho.length === 0">
+    <p>O carrinho está vazio.</p>
+  </div>
+</div>

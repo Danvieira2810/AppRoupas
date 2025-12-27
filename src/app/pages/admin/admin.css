@@ -1,0 +1,87 @@
+.contato-container {
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+
+.form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+.grupo-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #363636;
+    border-radius: 0px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: none;
+    height: 120px;
+}
+
+
+.btn-enviar {
+    width: 105%;
+    padding: 14px;
+    font-size: 18px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 400;
+    transition: 0.2s ease;
+}
+
+.btn-enviar:hover {
+    opacity: 0.8;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 25px 0;
+  font-size: 16px;
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+  }
+}
+ .btn-editar {
+  background-color: #004130;
+  color: #fff;
+  padding: 8px 30px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}

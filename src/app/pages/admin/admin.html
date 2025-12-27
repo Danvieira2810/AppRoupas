@@ -1,0 +1,39 @@
+<div class="contato-container">
+    <h1>Admin</h1>
+
+    <ng-container *ngIf="!isAuthenticated; else adminArea">
+        <form class="form-contato" (submit)="onSubmit(senhaInput.value); $event.preventDefault()">
+            <div class="grupo-input">
+                <label for="senha">Senha</label>
+                <input id="senha" #senhaInput type="password" placeholder="********">
+            </div>
+
+            <div *ngIf="errorMessage; else dica" class="error">{{ errorMessage }}</div>
+            <ng-template #dica>
+                <div class="info">Digite a senha para acessar.</div>
+            </ng-template>
+
+            <button type="submit" class="btn-enviar">Enviar</button>
+
+        </form>
+    </ng-container>
+
+
+    <ng-template #adminArea>
+        <div class="admin-area">
+
+           <nav class="menu">
+             <button class="btn-editar" routerLink="/admin-roupas">Admin Roupas</button>
+             <button routerLink="/admin-contato" class="btn-editar">Contatos Admin</button>
+             <button routerLink="/admin-conta" class="btn-editar" >Contas Admin</button>
+           </nav>
+
+            <button (click)="logout()" class="btn-enviar">Sair</button>
+        </div>
+    </ng-template>
+</div>
+<br><br><br>
+<br>
+<br>
+<br>
+<br>

@@ -1,0 +1,9 @@
+<h2>Contas Criadas</h2>
+
+<div *ngFor="let conta of contas" class="card">
+
+  <h3>{{ conta.nome }}</h3>
+  <p><strong>Email:</strong> {{ conta.email }}</p>
+
+  <button (click)="deletar(conta.id)" class="btn-excluir">Excluir</button>
+</div>

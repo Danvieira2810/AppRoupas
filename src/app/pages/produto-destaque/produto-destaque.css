@@ -1,0 +1,60 @@
+.destaque-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.imagem-area img {
+  width: 500px;
+  height: auto;
+  object-fit: contain;
+}
+
+.info-area {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 50px;
+}
+
+.info-area h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.preco {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.quantidade {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.quantidade button {
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: 1px solid #000;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.btn-comprar {
+  width: 250px;
+  padding: 12px;
+  background: #2d3c46;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.marca {
+  margin-top: 10px;
+  font-size: 15px;
+}

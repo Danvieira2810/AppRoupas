@@ -1,0 +1,53 @@
+<h2 class="titulo-pagina">Produtos Admin</h2>
+
+<button class="btn-novo" (click)="toggleFormulario()">
+  Novo Produto
+</button>
+
+<div class="form-container" *ngIf="mostrarFormulario">
+  <h3>Novo Produto</h3>
+
+  <form (ngSubmit)="salvarNovoProduto()">
+
+    <label>Nome:</label>
+    <input type="text" [(ngModel)]="novoProduto.nome" name="nome" required />
+
+    <label>Descrição:</label>
+    <textarea [(ngModel)]="novoProduto.descricao" name="descricao"></textarea>
+
+    <label>Preço:</label>
+    <input type="number" [(ngModel)]="novoProduto.preco" name="preco" required />
+
+    <label>Tipo:</label>
+    <select [(ngModel)]="novoProduto.tipo" name="tipo">
+      <option value="camisa">Camisa</option>
+      <option value="jaqueta">Jaqueta</option>
+      <option value="calça">Calça</option>
+      <option value="acessorio">Acessório</option>
+    </select>
+
+    <label>Imagem (URL):</label>
+    <input type="text" [(ngModel)]="novoProduto.imagem" name="imagem" required />
+
+    <button class="btn-salvar" type="submit">Salvar</button>
+    <button type="button" class="btn-cancelar" (click)="toggleFormulario()">Cancelar</button>
+
+  </form>
+</div>
+
+<div class="produtos-container">
+
+  @for (item of roupas; track item) {
+    <div class="produto-card">
+       <button class="botao-X" (click)="excluir(item.id)">X</button>
+      <img class="produto-img" [src]="item.imagem" alt="{{ item.nome }}" />
+
+      <p class="produto-nome">{{ item.nome }}</p>
+      <p class="produto-preco">R$ {{ item.preco }},00</p>
+
+      <button class="btn-editar" (click)="editar(item)">Editar</button>
+
+
+    </div>
+
+  }

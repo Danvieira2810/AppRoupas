@@ -1,0 +1,12 @@
+
+<h2>Mensagens Recebidas</h2>
+
+<div *ngFor="let contato of contatos" class="card">
+
+  <h3>{{ contato.nome }}</h3>
+  <p><strong>Email:</strong> {{ contato.email }}</p>
+  <p><strong>Telefone:</strong> {{ contato.telefone }}</p>
+  <p><strong>Mensagem:</strong> {{ contato.mensagem }}</p>
+
+  <button (click)="deletar(contato.id)" class="btn-excluir">Excluir</button>
+</div>

@@ -1,0 +1,17 @@
+.card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background: #fafafa;
+}
+
+.btn-excluir {
+  margin-top: 10px;
+  background: #b71c1c;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

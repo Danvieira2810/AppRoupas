@@ -1,0 +1,56 @@
+<div class="contato-container">
+  <h1>Contato</h1>
+
+  <form #formContato="ngForm" (ngSubmit)="enviar(formContato)" class="form-contato">
+
+    <div class="grupo-input">
+      <label for="nome">Nome</label>
+      <input
+        class="form-control"
+        type="text"
+        placeholder="Ex: Mari Peres"
+        [(ngModel)]="contato.nome"
+        name="nome"
+        required>
+    </div>
+
+    <div class="grupo-input">
+      <label for="email">E-mail</label>
+      <input
+        class="form-control"
+        type="email"
+        placeholder="Ex: mari@gmail.com"
+        [(ngModel)]="contato.email"
+        name="email"
+        required>
+    </div>
+
+    <div class="grupo-input">
+      <label for="telefone">Telefone</label>
+      <input
+        [(ngModel)]="contato.telefone"
+        name="telefone"
+        id="telefone"
+        type="text"
+        placeholder="Ex.: (11) 99999-9999"
+        required>
+    </div>
+    <div class="grupo-input">
+      <label for="mensagem">Mensagem</label>
+      <textarea
+        [(ngModel)]="contato.mensagem"
+        name="mensagem"
+        id="mensagem"
+        placeholder="Digite sua mensagem..."
+        required>
+      </textarea>
+    </div>
+    <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+  </form>
+  <p *ngIf="erro" style="color: red; margin-top: 10px;">
+    Preencha todos os campos.
+  </p>
+  <p *ngIf="enviado" style="color: green; margin-top: 10px;">
+    Mensagem enviada!
+  </p>
+</div>

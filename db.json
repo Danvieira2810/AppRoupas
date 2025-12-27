@@ -1,0 +1,177 @@
+{
+  "roupas": [
+    {
+      "id": "1",
+      "nome": "Jaqueta Esqueleto",
+      "descricao": "Marca Palace",
+      "tipo": "Jaqueta",
+      "imagem": ".//public/roupas2/jaquetas2/jaquetaesqueleto.png",
+      "preco": 100
+    },
+    {
+      "id": "2",
+      "nome": "Jaqueta Azul",
+      "descricao": "Marca Palace",
+      "tipo": "Jaqueta",
+      "imagem": ".//public/roupas2/jaquetas2/jaquetaazul.png",
+      "preco": 100
+    },
+    {
+      "id": "3",
+      "nome": "Jaqueta Vermelha",
+      "descricao": " Marca Palace",
+      "imagem": ".//public/roupas2/jaquetas2/jaquetavermelha.png",
+      "tipo": "Jaqueta",
+      "preco": 100
+    },
+    {
+      "id": "4",
+      "nome": "Jaqueta Preta",
+      "descricao": "Marca Palace",
+      "imagem": ".//public/roupas2/jaquetas2/jaquetapreta.png",
+      "tipo": "Jaqueta",
+      "preco": 100
+    },
+    {
+      "id": "5",
+      "nome": "Jaqueta Verde",
+      "descricao": "Marca Palace",
+      "imagem": ".//public/roupas2/jaquetas2/jaquetaverde.png",
+      "tipo": "Jaqueta",
+      "preco": 100
+    },
+    {
+      "id": "6",
+      "nome": "Calca Camo",
+      "descricao": "Marca Carhart",
+      "imagem": ".//public/roupas2/calcas2/calcacamo.png",
+      "tipo": "Calca",
+      "preco": 200
+    },
+    {
+      "id": "7",
+      "nome": "Calca Marrom",
+      "descricao": "Marca Palace",
+      "imagem": ".//public/roupas2/calcas2/calcamarrom.png",
+      "tipo": "Calca",
+      "preco": 150
+    },
+    {
+      "id": "8",
+      "nome": "Calca Preta",
+      "descricao": "Marca Palace",
+      "imagem": ".//public/roupas2/calcas2/calcapreta.png",
+      "tipo": "Calca",
+      "preco": 79
+    },
+    {
+      "id": "9",
+      "nome": "Camisa Aphex Twin",
+      "descricao": "Marca Supreme",
+      "imagem": ".//public/roupas2/blusas2/blusaaphextwin.png",
+      "tipo": "Camisa",
+      "preco": 120
+    },
+    {
+      "id": "10",
+      "nome": "Camisa Corporate World",
+      "descricao": "Marca Corporate World",
+      "imagem": ".//public/roupas2/blusas2/blusabranca.png",
+      "tipo": "Camisa",
+      "preco": 110
+    },
+    {
+      "id": "11",
+      "nome": "Camisa Polo Tipo Chief keef",
+      "descricao": "Marca Ralph Lauren",
+      "imagem": ".//public/roupas2/blusas2/blusapreta.png",
+      "tipo": "Camisa",
+      "preco": 190
+    },
+    {
+      "id": "12",
+      "nome": "Camisa Supreme Fox Racing",
+      "descricao": "Marca Supreme x Fox Racing",
+      "imagem": ".//public/roupas2/blusas2/foxsupreme.png",
+      "tipo": "Camisa",
+      "preco": 150
+    },
+    {
+      "id": "13",
+      "nome": "Boné Diesel",
+      "descricao": "Marca Diesel",
+      "imagem": ".//public/roupas2/acessorios2/bonediesel.png",
+      "tipo": "Boné",
+      "preco": 60
+    },
+    {
+      "id": "14",
+      "nome": "Boné Palace Cobra",
+      "descricao": "Marca Palace",
+      "imagem": ".//public/roupas2/acessorios2/bonepalacecobra.png",
+      "tipo": "Bone",
+      "preco": 60
+    },
+    {
+      "id": "15",
+      "nome": "Cinto Santa Ceia Supreme ",
+      "descricao": "Marca Supreme",
+      "imagem": ".//public/roupas2/acessorios2/cintosantaceia.png",
+      "tipo": "Cinto",
+      "preco": 40000000
+    },
+    {
+      "id": "16",
+      "nome": "Óculos Choppers",
+      "descricao": "Marca Choppers",
+      "imagem": ".//public/roupas2/acessorios2/oculoschoppers.png",
+      "tipo": "Oculos",
+      "preco": 80
+    }
+  ],
+  "contatos": [
+    {
+      "id": "663d",
+      "nome": "daniel",
+      "email": "daniel@gmail",
+      "telefone": "3199994444",
+      "mensagem": "Minha jaqueta ficou pequena quero trocar."
+    },
+    {
+      "id": "7828",
+      "nome": "felipe",
+      "email": "felipe@gmail.com",
+      "telefone": "3199997777",
+      "mensagem": "Quero trocar o boné."
+    },
+    {
+      "id": "3d97",
+      "nome": "vitor",
+      "email": "vitor@gmail.com",
+      "telefone": "3199997777",
+      "mensagem": "Quero devolução da calça."
+    }
+  ],
+  "contas": [
+    {
+      "id": "008c",
+      "nome": "Daniel",
+      "email": "daniel@gmail.com",
+      "senha": ""
+    },
+    {
+      "id": "d117",
+      "nome": "vitor",
+      "email": "vitor@gmail.com",
+      "senha": "1234"
+    },
+    {
+      "id": "a79e",
+      "nome": "felipe",
+      "email": "felipe@gmail.com",
+      "senha": "1234"
+    }
+  ],
+  "carrinho": [],
+  "pedidos": []
+}

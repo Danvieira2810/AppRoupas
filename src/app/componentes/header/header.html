@@ -1,0 +1,34 @@
+<header class="header">
+  <div class="header-left">
+    <button class="menu-btn" (click)="mostrarMenu = !mostrarMenu">☰</button>
+
+<div class="menu-lateral" *ngIf="mostrarMenu">
+ <a routerLink="/produto-destaque">Produto Destaque</a>
+ <a routerLink="/instagram">Instagram</a>
+</div>
+    <input type="text" placeholder="Pesquisar itens..." class="search-input" />
+
+  </div>
+
+  <div class="header-center">
+    <img src=".//public/logo4.png" alt="logo">
+  </div>
+
+  <div class="header-right">
+    <button class="btn-editar" routerLink="/conta">Conta</button>
+    <button class="btn-editar" routerLink="/carrinho">Carrinho</button>
+
+
+  </div>
+</header>
+
+<nav class="menu">
+  <a href="#">Início</a>
+  <a routerLink="/produtos">Produtos</a>
+  <a routerLink="/contato">Contato</a>
+  <a routerLink="/instagram">Instagram</a>
+  <a routerLink="/produto-destaque">Promoção</a>
+  <a routerLink="/admin">Admin</a>
+  <a routerLink="/sobre">Sobre</a>
+
+</nav>
