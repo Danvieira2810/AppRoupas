@@ -5,7 +5,7 @@
       "nome": "Jaqueta Esqueleto",
       "descricao": "Marca Palace",
       "tipo": "Jaqueta",
-      "imagem": ".//public/roupas2/jaquetas2/jaquetaesqueleto.png",
+      "imagem": "jaquetaesqueleto.png",
       "preco": 100
     },
     {
